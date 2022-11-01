@@ -1,0 +1,121 @@
+/* varibles */
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --name-and-states: 18px;
+}
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ol,
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+}
+
+body {
+    background: url(./images/bg-pattern-top.svg) left -22vw top -45vw no-repeat, url(./images/bg-pattern-bottom.svg) right -32vw bottom -62vw no-repeat, hsl(185, 75%, 39%);
+    background-size: 76vw, 90vw;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    border-radius: 15px;
+    min-width: 21rem;
+    background-color: #fff;
+    overflow: hidden;
+        box-shadow: 7px 10px 60px 5px rgb(0 0 0 / 12%);
+ }
+.profile-card {
+    background: url(./images/bg-pattern-card.svg) top no-repeat , #fff;
+    padding: 5rem 0 0 0;
+    margin-top: -5px;
+}
+
+.profile-img {
+    border-radius: 100px;
+    border: 5px solid #fff;
+    margin: 1rem 0;
+}
+
+.title {
+    color: var(--very-dark-blue);
+    font-size: var(--name-and-states);
+
+}
+
+.title span {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.profile-location {
+    color: var(--dark-grayish-blue);
+    margin: 1rem 0;
+}
+
+.profile-states {
+    margin: 1.5rem 0;
+}
+
+.profile-states li h2 {
+    font-size: var(--name-and-states);
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.profile-states li p {
+    color: var(--dark-gray);
+}
